@@ -883,7 +883,7 @@ body {
   position: relative;
   background-color: #fff;
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.7;
   color: #1e3e3f;
   padding: 0;
@@ -1074,6 +1074,12 @@ img {
   font-family: feathericon;
   font-size: larger;
 }
+.navbar-top {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 11.5rem;
+  border: none;
+}
 .wrap,
 .outer {
   width: 100%;
@@ -1242,20 +1248,24 @@ img {
 .local-search {
   position: relative;
   margin: 0 auto;
-  padding: 3rem;
-  background-color: #fff;
+  padding: 3rem 4rem;
+  background-color: rgba(255,255,255,0.522);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
   box-shadow: 0 1rem 3rem rgba(30,62,63,0.05);
   max-height: 100vh;
   overflow-y: auto;
+  margin-top: 4rem;
 }
 .local-search-input {
   border: 0.1rem #e6e6e6 solid;
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
   border-radius: 0.4rem;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.565);
   width: 100%;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   outline: none;
 }
 .local-search-input::-webkit-search-results-decoration,
@@ -2148,7 +2158,7 @@ pre .javascript .function {
 }
 .gitalk,
 .markdown-body {
-  font-size: 1.5rem !important;
+  font-size: 1.6rem !important;
 }
 .gt-container .gt-avatar.gt-comment-avatar img {
   -webkit-border-radius: 50%;
@@ -2343,8 +2353,6 @@ pre .javascript .function {
   content: '\f174';
 }
 .navbar-bottom {
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 .logo {
@@ -2358,16 +2366,19 @@ pre .javascript .function {
   display: inline-block;
   overflow: hidden;
   cursor: pointer;
-  width: 3.2rem;
-  height: 3.2rem;
-  -webkit-border-radius: 3.2rem;
-  -moz-border-radius: 3.2rem;
-  border-radius: 3.2rem;
+  padding: 0 1.5rem;
+  width: 8rem;
+  height: 4rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  border-radius: 5rem;
+  text-align: left;
   background-color: #f6f8fa;
-  line-height: 3rem;
+  line-height: 4rem;
+  font-size: 3rem;
 }
-.totop:hover > i {
-  animation: rocket 0.3s ease-in-out;
+.totop > i {
+  animation: rocket 0.6s infinite linear;
 }
 @-moz-keyframes rocket {
   0% {
@@ -2440,4 +2451,21 @@ pre .javascript .function {
     transform: translateY(0);
     opacity: 1;
   }
+}
+::-webkit-scrollbar {
+  background-color: #ea434a;
+  width: 0px;
+}
+::-webkit-scrollbar-button {
+  background-color: #ea434a;
+  width: 0px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ea434a;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #ea434a;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ea434a;
 }
