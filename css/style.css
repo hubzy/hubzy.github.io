@@ -1187,6 +1187,7 @@ img {
   background-image: url("https://unsplash.it/1600/900?random");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: 100%;
 }
 .video-media video,
 .video-media img {
