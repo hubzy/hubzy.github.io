@@ -1184,8 +1184,9 @@ img {
   z-index: 0;
   height: 60vh;
   overflow: hidden;
-  background-image: url("https://unsplash.it/1920/1080?random");
+  background-image: url("https://unsplash.it/1600/900?random");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .video-media video,
 .video-media img {
